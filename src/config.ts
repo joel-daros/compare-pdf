@@ -14,10 +14,10 @@ export interface ConfigSettings {
   quality: number;
   tolerance: number;
   threshold: number;
-  cleanPngPaths: boolean;
-  matchPageCount: boolean;
-  disableFontFace: boolean;
-  verbosity: number;
+  cleanPngPaths?: boolean;
+  matchPageCount?: boolean;
+  disableFontFace?: boolean;
+  verbosity?: number;
 }
 
 export interface ComparePdfConfig {
