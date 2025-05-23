@@ -1,4 +1,4 @@
-import { filter } from "lodash";
+import filter from "lodash/filter";
 import fs from "fs-extra";
 import path from "node:path";
 import { PNG } from "pngjs";
