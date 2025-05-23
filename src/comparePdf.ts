@@ -3,7 +3,7 @@ import path from "node:path";
 import { copyJsonObject, ensurePathsExist } from "./utils";
 import { comparePdfByBase64 } from "./compareData";
 import { comparePdfByImage, type CompareDetails } from "./compareImages";
-import defaultConfig, { type Config } from "./config";
+import defaultConfig, { type ComparePdfConfig } from "./config";
 
 export interface Coordinates {
   x0: number;
@@ -64,7 +64,7 @@ export interface CompareResult {
 export type ComparisonType = "byBase64" | "byImage";
 
 export class ComparePdf {
-  private config: Config;
+  private config: ComparePdfConfig;
   private opts: CompareOptions;
   private result: CompareResult;
   private baselinePdfBufferData?: Buffer;
@@ -72,7 +72,7 @@ export class ComparePdf {
   private baselinePdf?: string;
   private actualPdf?: string;
 
-  constructor(config: Config = copyJsonObject(defaultConfig)) {
+  constructor(config: ComparePdfConfig = copyJsonObject(defaultConfig)) {
     this.config = config;
     ensurePathsExist(this.config);
 

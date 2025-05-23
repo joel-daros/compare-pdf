@@ -20,7 +20,7 @@ interface ConfigSettings {
   verbosity: number;
 }
 
-export interface Config {
+export interface ComparePdfConfig {
   paths: ConfigPaths;
   settings: ConfigSettings;
 }
@@ -44,6 +44,6 @@ const config = {
     disableFontFace: true,
     verbosity: 0,
   },
-} as const satisfies Config;
+} as const satisfies ComparePdfConfig;
 
 export default config;

@@ -4,7 +4,7 @@ import path from "node:path";
 import { PNG } from "pngjs";
 import pixelmatch from "pixelmatch";
 import { ensureAndCleanupPath } from "./utils";
-import type { Config } from "./config";
+import type { ComparePdfConfig } from "./config";
 import type { CompareOptions } from "./comparePdf";
 
 export interface PdfDetails {
@@ -17,7 +17,7 @@ export interface CompareDetails {
   baselinePdfFilename: string;
   actualPdfBuffer: Buffer;
   baselinePdfBuffer: Buffer;
-  config: Config;
+  config: ComparePdfConfig;
   opts: CompareOptions;
 }
 

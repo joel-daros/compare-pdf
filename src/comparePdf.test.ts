@@ -1,12 +1,12 @@
 import fs from "fs-extra";
-import type { Config } from "./config";
+import type { ComparePdfConfig } from "./config";
 import { ComparePdf } from "./comparePdf";
 
 describe("Compare Pdf By Image Tests - Typescript", () => {
   const engines = ["native", "graphicsMagick"] as const;
   for (const engine of engines) {
     describe(`Engine: ${engine}`, () => {
-      let config: Config;
+      let config: ComparePdfConfig;
 
       beforeEach(async () => {
         config = (await import("./config.js")).default;
