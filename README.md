@@ -1,8 +1,10 @@
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/PDF_file_icon.svg/833px-PDF_file_icon.svg.png" height="128">
 
-# compare-pdf
+# compare-pdf-plus
 
-Standalone node module that compares pdfs
+Standalone node module that compares pdfs.
+
+This is a modern and updated Typescript version of the original https://github.com/marcdacz/compare-pdf package.
 
 ## Setup
 
@@ -23,7 +25,7 @@ brew install ghostscript
 Install npm module
 
 ```sh
-npm install compare-pdf
+npm install compare-pdf-plus
 ```
 
 ## Default Configuration
@@ -389,8 +391,3 @@ If you have issues running the app using Apple Silicon, be sure to install the f
 brew install pkg-config cairo pango
 brew install libpng jpeg giflib librsvg
 ```
-
-## Example Projects
-
--   [Using Mocha + Chai](/examples/mocha)
--   [Using Cypress](/examples/cypress)
