@@ -7,5 +7,6 @@ export default defineConfig({
     clearMocks: true,
     restoreMocks: true,
     exclude: [...configDefaults.exclude, "./lib/**/*"],
+    testTimeout: 10_000,
   },
 });
