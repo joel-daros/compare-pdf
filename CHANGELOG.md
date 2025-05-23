@@ -1,5 +1,11 @@
 # compare-pdf
 
+## 1.0.3
+
+### Patch Changes
+
+- ef80650: Fix config types
+
 ## 1.0.2
 
 ### Patch Changes
