@@ -1,0 +1,7 @@
+{
+  "recommendations": [
+    "biomejs.biome",
+    "dbaeumer.vscode-eslint",
+    "streetsidesoftware.code-spell-checker"
+  ]
+}
