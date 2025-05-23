@@ -1,6 +1,6 @@
 import path from "node:path";
 
-interface ConfigPaths {
+export interface ConfigPaths {
   actualPdfRootFolder: string;
   baselinePdfRootFolder: string;
   actualPngRootFolder: string;
@@ -8,7 +8,7 @@ interface ConfigPaths {
   diffPngRootFolder: string;
 }
 
-interface ConfigSettings {
+export interface ConfigSettings {
   imageEngine: "graphicsMagick" | "native";
   density: number;
   quality: number;

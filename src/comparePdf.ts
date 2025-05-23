@@ -30,7 +30,7 @@ export interface PageCrop {
   coordinates: Dimension;
 }
 
-export interface CompareOptions {
+export interface ComparePdfOptions {
   masks: PageMask[];
   crops: PageCrop[];
   onlyPageIndexes: number[];
@@ -65,7 +65,7 @@ export type ComparisonType = "byBase64" | "byImage";
 
 export class ComparePdf {
   private config: ComparePdfConfig;
-  private opts: CompareOptions;
+  private opts: ComparePdfOptions;
   private result: CompareResult;
   private baselinePdfBufferData?: Buffer;
   private actualPdfBufferData?: Buffer;
@@ -192,7 +192,7 @@ export class ComparePdf {
     return this;
   }
 
-  addMasks(masks: CompareOptions["masks"]): this {
+  addMasks(masks: ComparePdfOptions["masks"]): this {
     this.opts.masks = [...this.opts.masks, ...masks];
     return this;
   }
@@ -218,7 +218,7 @@ export class ComparePdf {
     return this;
   }
 
-  cropPages(cropPagesList: CompareOptions["crops"]): this {
+  cropPages(cropPagesList: ComparePdfOptions["crops"]): this {
     this.opts.crops = [...this.opts.crops, ...cropPagesList];
     return this;
   }
