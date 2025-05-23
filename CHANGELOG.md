@@ -1,5 +1,11 @@
 # compare-pdf
 
+## 1.0.1
+
+### Patch Changes
+
+- e2bd047: Fix types
+
 ## 1.0.0
 
 ### Major Changes
