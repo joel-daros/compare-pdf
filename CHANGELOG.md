@@ -1,5 +1,11 @@
 # compare-pdf
 
+## 1.0.2
+
+### Patch Changes
+
+- a0b1d91: Fix ComparePdfConfig export type
+
 ## 1.0.1
 
 ### Patch Changes
