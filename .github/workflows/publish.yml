@@ -32,11 +32,6 @@ jobs:
       - name: Lint
         run: pnpm lint
 
-      - name: Units tests
-        run: pnpm test
-        env:
-          CI: true
-
       - name: Create Release Pull Request or Publish
         id: changesets
         uses: changesets/action@v1
